@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Week 4 Forms</title>
+    </head>
+    <body>
+        <h1>Takeout Form</h1>
+        <form action="" method="post">
+            <!--input with type text-->
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" id="fullname"><br>
+
+            <label for="orderitem">Order Item</label>
+            <input type="text" name="orderitem" id="orderitem"><br>
+
+            <!--text area-->
+            <label for="specialrequest">Special Request</label>
+            <textarea name="specialrequest" id="specialrequest"></textarea> <br>
+
+            <!--input with type radio-->
+            <p>How do you want to pay?</p>
+            <label for="instore">pay in store</label>
+            <input type="radio" id="instore" name="howpay">
+            <label for="online">pay online</label>
+            <input type="radio" id="online" name="howpay"><br>
+            
+            <!--input with type checkbox-->
+            <p>Add condiments??</p>
+            <label for="bbq">BBQ Sauce</label>
+            <input type="checkbox" id="bbq" name="bbq">
+            <label for="ketchup">Ketchup</label>
+            <input type="checkbox" id="ketchup" name="ketchup"><br>
+            
+            <!--select box-->
+            <label for="pickup">Pickup Time</label>
+            <select id="pickup" name="pickup">
+                <option value="morning">morning</option>
+                <option value="afternoon">afternoon</option>
+                <option value="evening">evening</option>
+            </select> <br>
+
+
+            <input type="submit" value="send order"> 
+            <!--input is a void tag, no close-->
+
+        </form>
+    </body>
+</html>
