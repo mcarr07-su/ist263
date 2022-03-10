@@ -1,11 +1,11 @@
-h1, h2 {color: #630606;}
+h1, h2 {color: #890F0D;}
 body {background-color: #FFBC80;
     color: #F76E11;}
 a {color: #EF4B4B;}
-a:hover {color: #D9CE3F;}
-nav {background-color: #630606;}
-nav a {color: #E83A14;}
-nav a:hover {background-color: #D9CE3F;}
+a:hover {color: #fc8e8e;}
+nav {background-color: #890F0D;}
+nav a {color:#fc8e8e;}
+nav a:hover {color: #fd9956;}
 nav {padding: 10px solid #000000;
     margin-bottom: 30px;
     }
