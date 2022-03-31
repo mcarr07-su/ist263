@@ -13,11 +13,20 @@ nav {padding: 10px solid #000000;
 .clear {clear: both;}
 .row1 {margin-bottom: 30px;}
 .row2 {margin-bottom: 30px;}
-.row1, .row2, .otherskills {display: flex; padding: 20px; background-color: #ffdab9; border-radius: 1em;}
+.row1, .row2 {display: flex; padding: 20px; background-color: #ffdab9; border-radius: 1em;}
 .row1 div {flex: 1; margin: 10px;}
 .row2 div {margin: 10px;}
 .map {flex: 1; order: 2;}
 .form {flex: 1; order: 1;}
 .skills {display: flex; justify-content: center;}
-.flexbox2 {display:flex; }
-.otherskills{flex: 1;}
+.flexbox2 {display:flex; 
+    justify-content: space-between; 
+    flex-basis: 0%;
+    padding: 20px;}
+.otherskills {padding: 20px; background-color: #ffdab9; border-radius: 1em;}
+.skillsbox {
+    display: flex;
+    flex: 3;
+    justify-content: space-around;
+    text-align: center;
+}
