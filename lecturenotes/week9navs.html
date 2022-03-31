@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 Navs</title>
+    <style>
+        .row1 {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .row2 {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .row1 div, .row2 div, .row3 div {
+            margin: 10px;
+        }
+
+        .row3 {
+            display: flex;
+            background-color: black;
+            color: white;
+            margin-top: 10px;
+            justify-content: space-between; /* justify content is always on flex ROW not each item */
+        }
+        .firstinnerflex, .secondinnerflex {display:flex;}
+    </style>
+</head>
+<body>
+    
+    <div class="row1">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <div class="row2">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <div class="row3">
+        <div>
+            <div class="firstinnerflex"> <!-- adding 1 row with 4 columns, this is the row name -->
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Products</div>
+                <div>Contact</div> 
+            </div>
+        </div>
+        <div>
+            <div class="secondinnerflex"> <!--1 row 2 columns-->
+                <div>Twitter</div>
+                <div>Facebook</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
