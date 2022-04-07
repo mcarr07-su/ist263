@@ -1,0 +1,39 @@
+h1, h2 {color: #890F0D;}
+body {background-color: #FFBC80;
+    color: #F76E11;}
+a {color: #EF4B4B;}
+a:hover {color: #fc8e8e;}
+nav {background-color: #890F0D;}
+nav a {color:#fc8e8e;}
+nav a:hover {color: #fd9956;}
+nav {padding: 10px solid #000000;
+    margin-bottom: 30px;
+    }
+.quote {float: right;}
+.clear {clear: both;}
+.row1 {margin-bottom: 30px;}
+.row2 {margin-bottom: 30px;}
+.row1, .row2 {display: flex; padding: 20px; background-color: #ffdab9; border-radius: 1em;}
+.row2 {flex-wrap: wrap;}
+.row1 div {flex: 1; margin: 10px;}
+.row2 div {margin: 10px;}
+.map {flex: 1; order: 2;}
+.form {flex: 1; order: 1;}
+.skills {display: flex; justify-content: center;}
+.flexbox2 {display:flex; 
+    justify-content: space-between; 
+    flex-basis: 0%;
+    padding: 20px;}
+.otherskills {padding: 20px; background-color: #ffdab9; border-radius: 1em;}
+.skillsbox {
+    display: flex;
+    flex: 3;
+    justify-content: space-around;
+    text-align: center;
+}
+.banner {max-width: 100%;}
+@media only screen and (max-width: 800px) {
+    nav {font-size: 2em;}
+    nav a {size: 100%; display: block; margin-top: 40px;}
+    nav a span {display: none;}
+}
