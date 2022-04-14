@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        1. HTML link to anchor to content area
+        2. put an id attribute into the place u want the anchor to go
+        3. hide and show skip to content
+        4. style the skip to content link (so it looks nice)
+        */
+        #skip {
+            position: absolute; /*absolute means take it out of page flow and use left to set position */
+            left: -999px;
+            background-color: orange;
+            padding: 5px;
+        }
+        #skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#content" id="skip" tabindex="1">Skip to Content</a>
+        <a href="http://www.twitter.com" tabindex="4">Twitter</a>
+        <a href="index.html" tabindex="1">Home</a>
+        <a href="skills.html" tabindex="2">Skills</a>
+        <a href="contact.html" tabindex="3">Contact</a>
+    </nav>
+    <main>
+        <img src="image.jpg" alt="">
+        <h1>Accessibility</h1>
+        <h2>Semantic Tags</h2>
+        <h3>Aside</h3>
+        <h3>Nav</h3>
+        <h3>Footer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero obcaecati tenetur provident recusandae aut soluta excepturi ad cupiditate nobis commodi, veritatis laboriosam beatae, mollitia similique totam, sunt deserunt! Exercitationem, iusto.</p>
+        <h2>Heading Tags in Hierarchy</h2>
+    </main>
+    <footer id="content">
+        "the impact of disability is radically changed on the Web because the Web removes barriers to communication and interaction that many people face in the physical world. However, when web sites, applications, technologies, or tools are badly designed, they can create barriers that exclude people from using the Web."
+    </footer>
+</body>
+</html>
