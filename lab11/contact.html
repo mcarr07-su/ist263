@@ -44,11 +44,11 @@
             <div class="form">
                 <h2>Contact Me</h2>
                 <form action="https://formspree.io/f/mjvlwove" method="post">
-                <fieldset>
                     <label for="fullname"><strong>Full Name</strong></label>
                     <input type="text" name="fullname" id="fullname"><br>
 
-                    <p><strong>Purpose of Request</strong></p>
+                <fieldset>
+                    <legend><strong>Purpose of Request<strong></legend>
                     <p><label for="question">Question</label>
                     <input type="radio" value ="question" id="question" name="requesttype">
                     </p>
@@ -64,12 +64,11 @@
                     <label for="suggestion">Suggestion</label>
                     <input type="radio" value="suggestion" id="suggestion" name="requesttype"><br>
                     </p>
-
+                </fieldset>
                     <label for="message"><strong>Message</strong></label>
                     <textarea name="message" id="message"></textarea><br>
 
-                    <input type="submit" value="Send Message"> 
-                </fieldset>   
+                    <input type="submit" value="Send Message">   
                 </form>
             </div>
         </div>
