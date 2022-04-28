@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <!--
+        CSS
+        1. Large no hamburger
+        2. Small needs hamburger
+        
+        3. Large nav side by side
+        4. Small nav stacks and disappears 
+
+        JavaScript
+        5. Show stacked nav on click
+        6. Hide nav on second click
+    -->
+    <style>
+        #hamicon {
+            width: 40px;
+            display: none;
+        }
+
+        #navlinks a {
+            background-color: orange;
+            margin: 5px;
+            padding: 10px;
+        }
+        @media only screen and (max-width: 600px) {
+            #hamicon {display: block;}
+            #navlinks a {display: block;}
+            #navlinks {display: none;}
+        }
+    </style>
+    <script>
+        function toggleNav () {
+            if (document.getElementById('navlinks').style.getPropertyValue("display") == 'block') {
+                document.getElementById("navlinks").style.display = "none";
+        } else {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        }
+    </script>
+</head>
+<body>
+    <img src="https://laferger.github.io/ist263/images/hamburger.png" id="hamicon" onclick="toggleNav();">
+    <div id="navlinks">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</body>
+</html>
