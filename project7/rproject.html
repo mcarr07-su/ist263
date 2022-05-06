@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Coding Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#content" id="skip">Skip to Content</a>
+        <a href="index.html">Home <span>|</span></a>
+        <a href="tnh.html">TNH Experience <span>|</span></a>
+        <a href="rproject.html">R Project</a>
+    </nav>
+    <main id="content"> 
+        <h1><strong>Marissa Carr's Portfolio</strong></h1>
+        <h2>“Predicting Hotel Bookings that Lead to Cancellations”</h2>
+        <p>The task was to predict what characteristics of a hotel booking would lead to cancellations using RStudio.</p>
+
+        <h3>Boxplots</h3>
+        <img src="images/boxplot.png" alt="Boxplot" class="imgcenter">
+        <p>The first method used was examining different factors of the dataset on boxplots to see which factors had a stark difference between a cancelled booking and a non-cancelled booking. One factor that developed the most different looking boxplots was lead time (how far in advance the booking was made), which had a higher median for cancelled bookings. This is likely because the longer a booking is made in advance, the more time they have to change their plans and cancel their stay.</p>
+
+        <h3>Histograms</h3>
+        <div class="hist">
+            <div class="histcol1">
+                <img src="images/histogram.png" alt="Histogram for Non-Cancelled Bookings" class="img">
+            </div>
+            <div class="histcol2">
+                <img src="images/histogram2.png" alt="Histogram for Cancelled Bookings" class="img">
+            </div>
+        </div>
+        <p>Next, I did a similar analysis with histograms. Here I discovered that those who did not cancel their stay had a slightly higher frequency of making more booking changes than those who did not cancel their stay.</p>
+
+        <h3>Mapping</h3>
+        <img src="images/map.png" alt="Map of the Globe" class="imgcenter">
+        <p>I then used a map of the globe to identify which countries the hotel company had the most cancelled bookings in. The countries with the most cancellations were Portugal, Spain, the United Kingdom, and Ireland.</p>
+
+        <h3>Association Rule Mining</h3>
+        <img src="images/rulemining.png" alt="Rule Mining" class="imgcenter">
+        <p>Next, using association rule mining, I determined a list of rules that had high confidence, support, and lift values to discover that 91.74% of the time when a booking is made by a non-repeating guest, with a market segment of groups, a booking type of transient (meaning the booking was not part of a group, contract, or other transient bookings), and no booking changes were made before check in or cancellation, they will have also canceled their stay. The support value is 3.52%, meaning that these factors occur in the original data set together 3.52% of the time.</p>
+
+        <h3>SVM, Tree Model, and Confusion Matrix</h3>
+        <div class="tree">
+            <div class="treecol1">
+                <img src="images/treemodel1.png" alt="Tree Model">
+            </div>
+            <div class="treecol2">
+                <img src="images/treemodel2.png" alt="Tree Model">
+            </div>
+        </div>
+        <p>Then I created a support vector model, tree model, and a confusion matrix to determine which model had the best accuracy rate, but they both were very similar.</p>
+        
+        <h3>Conclusion</h3>
+        <p>This analysis allowed me to suggest to the CEO of the hotel company to give a larger cancellation fee for non-repeated guests who book reservations with a market segment of groups, do not make any booking changes, and have a transient type of booking. This is because these factors have occurred together and led to a cancellation 3.52% of all the reservations given, so this combination should be looked out for and discouraged. In addition, I suggested overbooking rooms when the factors predicted in the model that indicate a cancellation are created in a booking together, so the cancellations can be accounted for and the hotel will not lose money when a guest cancels their stay.</p>
+    </main>
+
+
+
+
+</body>
+</html>
