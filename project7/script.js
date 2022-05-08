@@ -21,3 +21,10 @@ function toggleNav () {
   document.getElementById("navlinks").style.display = "block";
 }
 }
+function toggleBack () {
+  if (document.getElementById('hamicon').style.getPropertyValue("display") == 'block') {
+      document.getElementById("hamicon").style.display = "none";
+} else {
+  document.getElementById("navlinks").style.display = "block";
+}
+}
