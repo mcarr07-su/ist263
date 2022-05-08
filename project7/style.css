@@ -32,9 +32,6 @@ nav {padding: 10px solid #000000;
 
 
 @media only screen and (max-width: 800px) {
-    nav {font-size: 1.5em;}
-    nav a {size: 100%; display: block; margin-top: 40px;}
-    nav a span {display: none;}
     .tnh1, .tnh2 {display: block;}
     .tree, .hist {display: block;}
     }
@@ -117,4 +114,17 @@ th {background-color: #d9f4ff;}
 }
 @media only screen and (max-width: 600px) {
     .countbox {display: block;}
+}
+#hamicon {
+    width: 40px;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {font-size: 1.5em;}
+    nav a {size: 100%; display: block; margin-top: 40px;}
+    nav a span {display: none;}
+    #hamicon {display: block;}
+    #navlinks a {display: block;}
+    #navlinks {display: none;}
 }

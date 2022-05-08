@@ -13,3 +13,11 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "I graduated!";
   }
 }, 1000);
+
+function toggleNav () {
+  if (document.getElementById('navlinks').style.getPropertyValue("display") == 'block') {
+      document.getElementById("navlinks").style.display = "none";
+} else {
+  document.getElementById("navlinks").style.display = "block";
+}
+}
