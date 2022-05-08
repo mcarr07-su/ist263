@@ -19,16 +19,24 @@ nav {padding: 10px solid #000000;
     padding: 20px;
     flex-wrap: wrap;
 }
+.img, .imgcenter {
+    max-width: 100%;
+}
 .tnh1 div, .tnh2 div {
     flex: 1; 
    margin: 30px;
 }
+.tnhcol2 {
+    overflow: auto;
+}
+
 
 @media only screen and (max-width: 800px) {
     nav {font-size: 1.5em;}
     nav a {size: 100%; display: block; margin-top: 40px;}
     nav a span {display: none;}
-    .imgcenter {max-width: 100%;}
+    .tnh1, .tnh2 {display: block;}
+    .tree, .hist {display: block;}
     }
 
 #skip {
@@ -63,7 +71,6 @@ th {background-color: #d9f4ff;}
     display:flex; 
     padding: 20px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .hist div, .tree div {
@@ -74,4 +81,40 @@ th {background-color: #d9f4ff;}
     display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.img1 {
+    max-width: 100%;
+}
+@media only screen and (max-width: 800px) {
+    .tree, .hist {display: block;}
+    }
+
+.countbox {display:flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.count {padding: 30px; 
+    background-color: #ffdab9; 
+    border-radius: 1em;}
+.info {
+    display: flex;
+    flex: 3;
+    margin: 20px;
+    }
+.count {order: 2;}
+.info {order: 1;}
+
+#count {
+    font-weight: bolder;
+    font-family: 'Lobster', cursive;
+}
+#countdown {
+    text-align: center;
+    border: 3px solid #8a3634;
+    padding: 10px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .countbox {display: block;}
 }
