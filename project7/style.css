@@ -8,9 +8,11 @@ h2 {color: #890F0D;}
 h3 {color: #8a3634;}
 a {color: #8D0C0C;}
 a:hover {color: #fc8e8e;}
+a:visited {color: #d4671e; }
 nav {background-color: #5e0b09;}
 nav a {color:#ffd4b8;}
-nav a:hover {color: #fd9956;}
+nav a:hover {color: #fc8e8e;}
+nav a:visited {color: #fd9956;}
 nav {padding: 10px solid #000000;
     margin-bottom: 30px;
     }
