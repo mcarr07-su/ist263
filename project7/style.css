@@ -51,7 +51,7 @@ table, td, th {border: 1px solid black;
 padding: 10px;}
 th {background-color: #d9f4ff;}
 
-.center, .center1 {
+.center {
     display: flex;
     justify-content: center;
 }
